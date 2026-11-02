@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Renk Değiştirme Projesi</title>
+</head>
+<body>
+
+    <h1>Renk Değiştirme Oyunu</h1>
+
+    <p>Butona basarak arka plan rengini değiştir!</p>
+
+    <button onclick="renkDegistir()">
+        Rengi Değiştir
+    </button>
+
+    <script>
+        function renkDegistir() {
+            let renkler = ["red", "blue", "green", "yellow", "orange", "pink"];
+
+            let rastgele = Math.floor(Math.random() * renkler.length);
+
+            document.body.style.backgroundColor = renkler[rastgele];
+        }
+    </script>
+
+</body>
+</html>
